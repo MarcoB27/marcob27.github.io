@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marco Bellante | Portfolio & CV</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A8A', // Navy Blue
+                        secondary: '#3B82F6',
+                        dark: '#1F2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome per le icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold text-primary tracking-tight">Marco Bellante</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-primary transition">Profilo</a>
+                <a href="#projects" class="hover:text-primary transition">Progetti</a>
+                <a href="#skills" class="hover:text-primary transition">Competenze</a>
+                <a href="#education" class="hover:text-primary transition">Formazione</a>
+                <a href="#contact" class="hover:text-primary transition">Contatti</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="CV_italiano.pdf" download class="bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>CV PDF</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 bg-gradient-to-br from-blue-900 via-primary to-slate-900 text-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="md:w-2/3 space-y-6">
+                <span class="bg-blue-500/30 text-blue-200 text-xs font-semibold px-3 py-1.5 rounded-full uppercase tracking-wider">Disponibile per Stage e Posizioni Junior</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                    Ciao, sono <span class="text-blue-300">Marco Bellante</span>
+                </h1>
+                <p class="text-xl text-slate-300 font-medium">
+                    Studente di Informatica @ Università degli Studi di Milano | Full-Stack Developer & Data Analyst
+                </p>
+                <p class="text-slate-400 max-w-xl text-sm leading-relaxed">
+                    Motivato e orientato ai dettagli, con una solida base nello sviluppo web full-stack, nella progettazione di database NoSQL e nell'analisi dei dati.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#projects" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-slate-100 transition shadow-md">
+                        Esplora i Progetti
+                    </a>
+                    <a href="#contact" class="border border-slate-400 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-white/10 transition">
+                        Mettiamoci in contatto
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/3 flex justify-center">
+                <div class="relative w-64 h-64 rounded-full p-2 bg-gradient-to-tr from-blue-400 to-primary shadow-2xl">
+                    <img src="foto_cv.jpg" alt="Marco Bellante" class="w-full h-full object-cover rounded-full border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900">Profilo Professionale</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-600 mt-4 text-sm">Chi sono e cosa posso offrire al tuo team</p>
+        </div>
+        <div class="bg-white p-8 md:p-12 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/3 text-center md:text-left space-y-4">
+                <div class="text-primary text-5xl"><i class="fa-solid fa-code"></i></div>
+                <h3 class="text-xl font-bold text-slate-800">Passione per la tecnologia</h3>
+                <p class="text-slate-500 text-sm">Forte attitudine al problem-solving, logica algoritmica e spiccata propensione al lavoro in team.</p>
+            </div>
+            <div class="w-full md:w-2/3 border-t md:border-t-0 md:border-l border-slate-100 md:pl-8 space-y-4 text-slate-600 text-sm leading-relaxed">
+                <p>
+                    Frequento la Laurea Triennale in Informatica presso l'<strong>Università degli Studi di Milano</strong>. Ho consolidato competenze tecniche pratiche nello sviluppo di applicazioni web full-stack, gestione di database NoSQL e visualizzazione avanzata di dataset complessi.
+                </p>
+                <p>
+                    Parlo fluentemente italiano (madrelingua) e possiedo un'ottima conoscenza dell'inglese (livello B2+). Sono alla ricerca di opportunità lavorative stimolanti come sviluppatore junior o posizioni di stage.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-6 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Progetti Tecnici</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-600 mt-4 text-sm">Alcuni dei principali progetti universitari e personali realizzati</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-blue-100 text-primary text-xs font-semibold px-3 py-1 rounded-full">Full-Stack</span>
+                            <span class="text-xs text-slate-400 font-medium">Set 2024 -- In corso</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800">Piattaforma Gestione Fast Food</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Applicazione web full-stack con interfacce basate su ruoli per clienti e amministrazione. Include flusso di checkout completo e dashboard di gestione menu in tempo reale.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">HTML/CSS</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">JavaScript</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Node.js</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="text-slate-500 italic text-xs">Progetto Universitario</span>
+                        <a href="https://github.com/MarcoB27" target="_blank" class="text-primary font-semibold hover:underline flex items-center space-x-1">
+                            <span>GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200/60 flex flex-col justify-between hover:shadow-md transition">
+                    <div class="p-8 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-semibold px-3 py-1 rounded-full">Data Analysis</span>
+                            <span class="text-xs text-slate-400 font-medium">Progetto Universitario</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-800">Market Data Visualization - EV</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Analisi dei trend di mercato europeo e italiano per veicoli BEV e PHEV basata su dataset Istat, Eurostat e Motus-E, con visualizzazioni avanzate e report normativi UE.
+                        </p>
+                        <div class="flex flex-wrap gap-2 pt-2">
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Python</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Pandas</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">Matplotlib/Seaborn</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs px-2.5 py-1 rounded-md font-medium">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-sm">
+                        <span class="text-slate-500 italic text-xs">Team di 3 persone</span>
+                        <a href="https://github.com/MarcoB27" target="_blank" class="text-primary font-semibold hover:underline flex items-center space-x-1">
+                            <span>GitHub</span> <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold text-slate-900">Competenze Tecniche</h2>
+            <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+            <p class="text-slate-600 mt-4 text-sm">Il mio stack tecnologico e strumenti di sviluppo</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+                <div class="text-primary text-2xl"><i class="fa-solid fa-terminal"></i></div>
+                <h3 class="text-lg font-bold text-slate-800">Linguaggi</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Go</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>JavaScript / HTML / CSS</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Python</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Java</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+                <div class="text-primary text-2xl"><i class="fa-solid fa-layer-group"></i></div>
+                <h3 class="text-lg font-bold text-slate-800">Framework & Strumenti</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Node.js & MongoDB</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Git & GitHub</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Linux / macOS / Windows</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 space-y-4">
+                <div class="text-primary text-2xl"><i class="fa-solid fa-users-gear"></i></div>
+                <h3 class="text-lg font-bold text-slate-800">Competenze Trasversali</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Problem Solving</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Pensiero Analitico</li>
+                    <li><i class="fa-solid fa-check text-primary mr-2"></i>Lavoro di Squadra</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-6 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900">Formazione</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 flex items-start gap-6">
+                    <div class="bg-primary/10 text-primary p-4 rounded-xl text-xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-primary uppercase tracking-wide">Ott 2022 -- In corso</span>
+                        <h3 class="text-xl font-bold text-slate-800">Laurea Triennale in Informatica</h3>
+                        <p class="text-slate-600 text-sm font-medium">Università degli Studi di Milano — Milano, Italia</p>
+                        <p class="text-slate-500 text-xs leading-relaxed">Esami rilevanti: Programmazione (Go), Basi di Dati, Tecnologie e Linguaggi per il Web, Visualizzazione Scientifica, Linguaggi Formali e Automi, Matematica del Discreto.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200/60 flex items-start gap-6">
+                    <div class="bg-primary/10 text-primary p-4 rounded-xl text-xl"><i class="fa-solid fa-school"></i></div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-semibold text-primary uppercase tracking-wide">Set 2016 -- Giu 2021</span>
+                        <h3 class="text-xl font-bold text-slate-800">Diploma di Liceo Scientifico</h3>
+                        <p class="text-slate-600 text-sm font-medium">ITT Ettore Molinari — Opzione Scienze Applicate, Milano</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <div class="bg-gradient-to-br from-primary to-blue-900 text-white p-12 rounded-3xl shadow-xl space-y-6">
+            <h2 class="text-3xl font-bold">Iniziamo a collaborare</h2>
+            <p class="text-slate-200 text-sm max-w-xl mx-auto">
+                Hai una proposta di stage, un'opportunità junior o vuoi semplicemente fare due chiacchiere? Contattami pure via email o su LinkedIn.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="mailto:marco.bellante@outlook.it" class="bg-white text-primary px-6 py-3 rounded-lg font-semibold text-sm hover:bg-slate-100 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>marco.bellante@outlook.it</span>
+                </a>
+                <a href="https://www.linkedin.com/in/marco-bellante-0b472b16b/" target="_blank" class="bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-blue-800 transition flex items-center space-x-2">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/MarcoB27" target="_blank" class="bg-slate-800 text-white px-6 py-3 rounded-lg font-semibold text-sm hover:bg-slate-900 transition flex items-center space-x-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-slate-900 text-slate-400 text-center text-xs border-t border-slate-800">
+        <p>&copy; 2026 Marco Bellante. Tutti i diritti riservati. Realizzato con HTML5 & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
